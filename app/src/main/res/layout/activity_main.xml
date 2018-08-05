@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="To run your test please import an image to the app"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/button_import_photos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Import Image"
+        android:onClick="onButtonImportClicked"/>
+
+    <TextView
+        android:id="@+id/text_import_succeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="You have successfully imported an image now you can test and compare the two different methods of resizing the image"
+        android:textColor="#007700"
+        android:textSize="13sp"
+        android:visibility="invisible"/>
+
+
+    <Button
+        android:id="@+id/button_method_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="Resize using method 1"
+        android:enabled="false"
+        android:onClick="onButtonMethodOneClicked" />
+
+
+    <TextView
+        android:id="@+id/text_method_1_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/button_method_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="Resize using method 2"
+        android:enabled="false"
+        android:onClick="onButtonMethodTwoClicked" />
+
+    <TextView
+        android:id="@+id/text_method_2_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center" />
+
+</LinearLayout>
